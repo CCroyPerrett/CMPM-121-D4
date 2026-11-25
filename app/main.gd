@@ -38,6 +38,7 @@ func _process(delta: float) -> void:
 		_clock -= TICK_SECONDS
 		session.tick()
 		_draw_dragon()
+		_draw_food()
 	_follow(delta)
 
 
@@ -71,6 +72,11 @@ func _draw_dragon() -> void:
 		segment.mesh = meshes[Kit.Piece.keys()[placed[i][0]].to_lower()]
 		segment.position = _center(cell)
 		segment.rotation.y = placed[i][1] * PI / 2
+
+func _draw_food() -> void:
+	var food = MeshInstance3D.new();
+	food.mesh = meshes["food"]
+	food.position = _center(session.food.position);
 
 
 func _center(cell: Vector2i) -> Vector3:

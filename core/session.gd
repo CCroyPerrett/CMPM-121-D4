@@ -20,4 +20,6 @@ func _init(grid_size: Vector2i) -> void:
 ## else, which is why they go here rather than in Dragon.tick.
 func tick() -> void:
 	dragon.tick()
-	if dragon.body[0] == food.position : food.move()
+	if dragon.body[0] == food.position : 
+		food.move()
+		
