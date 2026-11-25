@@ -6,11 +6,13 @@ extends RefCounted
 
 var board: Board
 var dragon: Dragon
+var food: Food
 
 
 func _init(grid_size: Vector2i) -> void:
 	board = Board.bordered(grid_size)
 	dragon = Dragon.new(grid_size)
+	food = Food.new(grid_size, 4)
 
 
 ## One step of the rules. TODO for D4: food, growth, and collisions with the dragon's
@@ -18,3 +20,4 @@ func _init(grid_size: Vector2i) -> void:
 ## else, which is why they go here rather than in Dragon.tick.
 func tick() -> void:
 	dragon.tick()
+	if dragon.body[0] == food.position : food.move()
