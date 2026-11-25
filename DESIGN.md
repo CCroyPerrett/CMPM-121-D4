@@ -5,8 +5,8 @@ to learn where your project is headed. Replace each _italic prompt_.
 
 ## Target
 
-_One or two sentences: what is this creature, what does it eat, where does it live,
-and what should playing feel like?_
+
+In our game you will be playing as an eldritch robotic monster, scouring tehcnological ruins to consume power cells and rivals to further your survival and dominance. Playing should make you feel bloodthristy (or oilthirsty since we're dealing with robot here lol).
 
 ## Menu choices
 
@@ -14,8 +14,12 @@ Two items from two different groups (see the D4 guide's "The menu" tab).
 
 | Item | Group | Done when (in your words) |
 | --- | --- | --- |
-| _item_ | _group_ | _what you will be able to show_ |
-| _item_ | _group_ | _what you will be able to show_ |
+
+| Procedural Terrain | Content | Differing terraign types that generates based on biome-based algorithems, creating an assortment of obstacles to work around/utilize. |
+Should be done second as to support the rivalry based gameplay.
+
+| Rival | Systems | A second snake, which behaves with purpose to cutoff/defeat the first snake. Can be controlled through a second player or a simple game AI. |
+Should be done first as the primary mechanic to reveolve the game around.
 
 ## Words we use
 
